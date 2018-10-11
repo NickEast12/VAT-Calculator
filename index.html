@@ -1,0 +1,149 @@
+<!DOCYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+		<title>VAT Calculator</title>
+		<meta charset="utf-8">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				
+			}
+			header {
+				background-color: tomato;
+				height: 17em;
+			}
+			h1 {
+				width: 100%;
+				text-align: center;
+				font-family: poppins;
+				font-size: 5em;
+				color: white;
+			}
+			h2 {
+				width: 100%;
+				text-align: center;
+				font-family: poppins;
+				font-size: 3em;
+				color: white;
+				font-weight: 500
+			}
+			h3 {
+				font-family: poppins;
+				width: 70%;
+				margin: auto;
+				font-size: 1.4em;
+				font-weight: 500;
+				text-align: center;
+				color: white;
+				
+				
+			}
+			.mainDiv {
+				height: 27em;
+				width: 60%;
+				margin: auto;
+				text-align: center;
+			}
+			h4 {
+				font-family: poppins; 
+				font-weight: 500;
+				font-size: 3em;
+			}
+			span {
+				font-family: poppins; 
+				font-weight: 500;
+				font-size: 2em;
+				color: tomato;
+				margin-left: 10px;
+				
+			}
+			#footerDiv {
+				width: 100%;
+				background: tomato;
+				color: white;
+				text-align: center;
+				height: 6em;
+				padding: 2%;
+				margin-top: 2em;
+				
+			}
+			
+			p {
+				font-size: 1.2em; 
+				font-family: poppins;
+				color: black;
+			}
+		
+		
+		</style>
+	</head>
+	<header>
+		<h1>Vine Street</h1>
+		<h2>VAT Calculator</h2>
+		<h3>This is a short in the browser application that lets you input a number, select the VAT then remove it or add. This is a work in progess</h3>
+	</header>
+	<body onload="myFunction()">
+		<div class="mainDiv">
+			<h4>Net Amount:<span id="YourNumber"></span></h4>
+			<h4>VAT @:<span id="theTax"></span></h4>
+			<h4>Gross Amount:<span id="result"></span></h4>
+		</div>
+	</body>
+	<footer>
+		<div id="footerDiv">
+			<p>Nick East &copy; 2018</p>
+		</div>
+		<script>
+			
+
+			
+						
+			/*
+			var number = prompt('Enter the number you want to add VAT to');
+			var VAT = number / 100 * 20;
+			var VATadded = 1 * number + 1 * VAT;
+			alert(VATadded);
+			*/
+			/*
+			var number2 = prompt('Enter the number you wish to remove VAT from');
+			var VAT2 = number2 / 100 * 20;
+			alert(number2 - VAT2);
+			*/
+			
+			function myFunction() {
+			// Assigning the varibles
+			var numberInput = prompt('Enter your number here');
+			var VATinput = prompt('Enter the tax rate you are using');
+			var plusTakeaway = prompt('Are you taking away VAT or Adding it? enter takeaway or add');
+			// the maths
+			if (plusTakeaway === 'takeaway') {
+				var workingOut = numberInput / 100 * VATinput;
+				var answer = numberInput - workingOut;
+				};
+			if (plusTakeaway === 'add') {
+					var workingOutTwo = numberInput / 100 * VATinput;
+					var answer2 = 1 * numberInput +  1 * workingOutTwo;
+				};
+			// Pushing the inputted results to HTML
+			document.getElementById('YourNumber').innerHTML = numberInput;
+			document.getElementById('theTax').innerHTML = VATinput + ' %';
+			//Deciding on what answer to push to HTML 	
+			if (plusTakeaway === 'takeaway') {
+			document.getElementById('result').innerHTML = answer;
+				};
+			if (plusTakeaway === 'add') {
+				document.getElementById('result').innerHTML = answer2;
+				};	
+			}
+			
+									
+			
+		
+			
+		
+		</script>
+	</footer>	
+</html>
