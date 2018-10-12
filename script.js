@@ -14,9 +14,10 @@
 			function myFunction() {
 				
 			// Assigning the varibles
-			var numberInput = prompt('Enter your number here');
-			var VATinput = prompt('Enter the tax rate you are using');	
-			var plusTakeaway = prompt('Are you taking away VAT or Adding it? enter takeaway or add');
+			alert('This is a working VAT calculator that can either add or take away different levels of VAT')
+			var numberInput = prompt('Please enter the figure that you wish to add or remove VAT');
+			var VATinput = prompt('Enter the tax rate you are using e.g 17.5 or 20');	
+			var plusTakeaway = prompt('Are you taking away VAT or Adding it? enter takeaway or add; no caps please');
 				
 			
 				
