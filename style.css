@@ -44,12 +44,13 @@
 			h4 {
 				font-family: poppins; 
 				font-weight: 500;
-				font-size: 3em;
+				font-size: 3.6em;
+				line-height: 2.8em
 			}
 			span {
 				font-family: poppins; 
 				font-weight: 500;
-				font-size: 2em;
+				font-size: 1em;
 				color: tomato;
 				margin-left: 10px;
 				

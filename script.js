@@ -14,24 +14,18 @@
 			function myFunction() {
 				
 			// Assigning the varibles
-			alert('This is a working VAT calculator that can either add or take away different levels of VAT')
+			alert('This is a working VAT calculator that can either add or take away different levels of VAT');
 			var numberInput = prompt('Please enter the figure that you wish to add or remove VAT');
 			var VATinput = prompt('Enter the tax rate you are using e.g 17.5 or 20');
 				
+		
 				
-			//var plusTakeaway = prompt('Are you taking away VAT or Adding it? enter takeaway or add; no caps please');
-			
-				for (var i=0; i !== 'takeaway' && i !== 'add';) {
+				
+			// Makes sure the user enters in the correct phrase - eliminates the NaN error
+			for (var i=0; i !== 'takeaway' && i !== 'add';) {
 					i = prompt('Are you taking away VAT or Adding it? enter takeaway or add; no caps please');
 					
 				}
-					
-					
-					
-				
-				
-			
-				
 			// the maths
 			if (i === 'takeaway') {
 				var workingOut = numberInput / 100 * VATinput;
@@ -40,8 +34,7 @@
 			if (i === 'add') {
 					var workingOutTwo = numberInput / 100 * VATinput;
 					var answer2 = 1 * numberInput +  1 * workingOutTwo;
-				}
-				
+				}	
 			// Pushing the inputted results to HTML
 			document.getElementById('YourNumber').innerHTML = '£' + numberInput;
 			document.getElementById('theTax').innerHTML = VATinput + ' %';
