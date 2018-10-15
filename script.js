@@ -21,7 +21,7 @@
 				
 			//var plusTakeaway = prompt('Are you taking away VAT or Adding it? enter takeaway or add; no caps please');
 			
-				for (var i=0; i !== 'takeaway';) {
+				for (var i=0; i !== 'takeaway' && i !== 'add';) {
 					i = prompt('Are you taking away VAT or Adding it? enter takeaway or add; no caps please');
 					
 				}
