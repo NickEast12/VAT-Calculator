@@ -1,32 +1,33 @@
-<!DOCYPE html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<script src="script.js" type="text/javascript"></script>
-		<title>VAT Calculator</title>
-		<meta charset="utf-8">
-	</head>
-	<header>
-		<h1>Vine Street</h1>
-		<h2>VAT Calculator</h2>
-		<h3>This is a short in the browser application that lets you input a number, select the VAT then remove it or add. This is a work in progess</h3>
+<head>
+	<title>VAT-Calculator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+
+</head>
+<header>
+	<div class="Introduction">
+		<h1>VAT-Calculator</h1>
+		<h2>This is a short in the browser VAT Calculator that lets you selcted the ammount of VAT to remove or add to a number</h2>
+		<h3>This is a work in progress and is constantly being updated</h3>
+	</div>
+	<div class="User-Input-Wrapper">
+		<form>
+		<input type="text" placeholder="Enter your figure here" id="Input"> 
+		<input type="text" placeholder="Select your VAT rate %" id="VATrate"> 
+		<input type="text" placeholder="Removing or Adding VAT?" id="method"> 
+		<button  id="button" onclick=" return myFunction()">Do the Maths</button>
+		<h6 id="answer"></h6>
+
+		</form>
+
+	</div>
+	<div class="Footer-Wrapper">
+		<h6>Nick East &copy; 2018, All Rights Reserved</h6>
+	</div>
 	</header>
-	<body onload="myFunction()">
-		<div class="mainDiv">
-			<h4>Net Amount:<span id="YourNumber"></span></h4>
-			<h4>VAT @:<span id="theTax"></span></h4>
-			<h4>Gross Amount:<span id="result"></span></h4>
-		</div>
-	</body>
-	<footer>
-		<div id="footerDiv">
-			<p>Nick East &copy; 2018</p>
-		</div>
-					
-			
-		
-			
-		
-	</footer>	
+<script src="script.js" type="text/javascript"></script>
 </html>
