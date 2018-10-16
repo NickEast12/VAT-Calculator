@@ -100,34 +100,34 @@ header {
 }
 @media only screen and (min-width: 1000px) {
 	/* Introduction Styling */ 
-.Introduction {
+	.Introduction {
 	width: 80%;
 	margin: auto;
 	text-align: center;
 	margin-top: 1em;
 }
-.Introduction h1 {
+	.Introduction h1 {
 	font-size: 4.5em;
 	font-weight: 700;
 }
-.Introduction h2 {
+	.Introduction h2 {
 	font-weight: 400;
 	width: 70%;
 	margin: auto;
 }
-.Introduction h3 {
+	.Introduction h3 {
 	font-style: italic;
 	margin-top: 1em;
 }
-/* styling the input buttons */
-.User-Input-Wrapper {
+/* styling the input  */
+	.User-Input-Wrapper {
 	width: 60%;
 	margin: auto;
 	text-align: center;
 }
 	.text {
 	display: block;
-	width: 100%;
+	width: 90%;
 	font-size: 2.5em;
 	margin: 1em;
 	border-radius: 20px;
@@ -164,7 +164,6 @@ header {
 	
 	
 }
-	
 /* syling the method boxes */
 	.method-wrapper {
 		display: grid;
@@ -182,10 +181,8 @@ header {
 	.each-method input {
 		margin: 4px 0 0 1em;; 
 	}
-	
-	
 /* styling the footer */
-.Footer-Wrapper {
+	.Footer-Wrapper {
 	width: 100%;
 	background: black;
 	height: 7em;
@@ -193,13 +190,13 @@ header {
 	color: white;
 	text-align: center;
 }
-.Footer-Wrapper h6 {
+	.Footer-Wrapper h6 {
 	padding: 2.6% 0 0 0;
 	font-size: 1em;
 	font-weight: 100;
 }
-
-#answer {
+/* Styling the answer result*/
+	#answer {
 	font-size: 4em;
 	margin-top: 1em;
 	font-weight: 300;

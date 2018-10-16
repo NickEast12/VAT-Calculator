@@ -11,12 +11,12 @@
 <header>
 	<div class="Introduction">
 		<h1>VAT-Calculator</h1>
-		<h2>This is a short in the browser VAT Calculator that lets you selcted the ammount of VAT to remove or add to a number</h2>
+		<h2>This is a short in the browser VAT Calculator that lets you selcted the amount of VAT to remove or add to a number</h2>
 		<h3>This is a work in progress and is constantly being updated</h3>
 	</div>
 	<div class="User-Input-Wrapper">
 		<form>
-		<input type="text" placeholder="Enter your figure here" id="Input" class="text"> 
+		<input type="text" placeholder="Enter your figure here" id="Input" class="text" name="input"> 
 		<div class="radio-wrapper">
 			<div class="radio">	
 				<p>15%</p>
@@ -40,9 +40,7 @@
 				<p>Add VAT</p>
 				<input type="radio" name="method" value="add" id="add" class="method">
 			</div>
-		</div>	
-		<!--<input type="text" placeholder="Removing or Adding VAT?" id="method" class="text"> -->
-			
+		</div>		
 		<button  id="button" onclick=" return myFunction()">Do the Maths</button>
 		<h6 id="answer"></h6>
 
