@@ -16,14 +16,37 @@
 	</div>
 	<div class="User-Input-Wrapper">
 		<form>
-		<input type="text" placeholder="Enter your figure here" id="Input"> 
-		<input type="text" placeholder="Select your VAT rate %" id="VATrate"> 
-		<input type="text" placeholder="Removing or Adding VAT?" id="method"> 
+		<input type="text" placeholder="Enter your figure here" id="Input" class="text"> 
+		<div class="radio-wrapper">
+			<div class="radio">	
+				<p>15%</p>
+				<input type="radio" name="VATrate" value="15" id="VAT15" class="radiobutton">
+			</div>
+			<div class="radio">	
+				<p>17.5%</p>
+				<input type="radio" name="VATrate" value="17.5" id="VAT17" class="radiobutton">
+			</div>
+			<div class="radio">	
+				<p>20%</p>
+				<input type="radio" name="VATrate" value="20" id="VAT20" class="radiobutton">
+			</div>
+		</div>
+		<div class="method-wrapper">
+			<div class="each-method">
+				<p>Remove VAT</p>
+				<input type="radio" name="method" value="takeaway" id="takeaway" class="method">
+			</div>
+			<div class="each-method">
+				<p>Add VAT</p>
+				<input type="radio" name="method" value="add" id="add" class="method">
+			</div>
+		</div>	
+		<!--<input type="text" placeholder="Removing or Adding VAT?" id="method" class="text"> -->
+			
 		<button  id="button" onclick=" return myFunction()">Do the Maths</button>
 		<h6 id="answer"></h6>
 
 		</form>
-
 	</div>
 	<div class="Footer-Wrapper">
 		<h6>Nick East &copy; 2018, All Rights Reserved</h6>
